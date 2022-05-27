@@ -1,0 +1,8 @@
+javac -d ./build .\digitalphotoframe\*.java
+
+cd .\build\
+
+# working:
+java digitalphotoframe.App
+# works too: but make sure MANIFEST has an empty line at the end
+jar cmvf .\META-INF\MANIFEST.MF test.jar .\digitalphotoframe\* 
